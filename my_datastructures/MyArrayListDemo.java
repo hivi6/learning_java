@@ -69,8 +69,6 @@ public class MyArrayListDemo {
         a.add(6);
         a.add(7);
         a.add(8);
-
-        a.add(10, 122);
         a.debugPrint();
     }
 }
