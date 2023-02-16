@@ -107,6 +107,14 @@ class MyLinkedList {
         }
         return false;
     }
+
+    public boolean addAll(MyLinkedList list) {
+        if (list == null)
+            throw new NullPointerException();
+        for (var node = list.head; node != null; node = node.next)
+            add(node.value);
+        return list.len != 0;
+    }
 }
 
 public class MyLinkedListDemo {
