@@ -5,6 +5,7 @@ class GenericArray<T> {
     GenericArray(T[] e) {
         elems = e;
     }
+    @SuppressWarnings("unchecked") 
     GenericArray(int cap) {
         elems = (T[]) new Object[cap];
     }
