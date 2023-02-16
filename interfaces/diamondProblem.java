@@ -29,6 +29,9 @@ interface Interface4 extends Interface2, Interface3 {
     }
 }
 
-public class diamondProblem {
-    
+public class diamondProblem implements Interface4 {
+    public static void main(String[] args) {
+        diamondProblem d = new diamondProblem();
+        d.exampleFunc();
+    }
 }
